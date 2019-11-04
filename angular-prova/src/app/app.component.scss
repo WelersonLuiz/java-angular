@@ -1,0 +1,34 @@
+body{
+    background-image: url('../assets/images/Background-Home.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 500px -150px;
+    background-color: #B4B8AB;
+}
+
+button {
+    padding: 10px;
+    background-color: #284B63;
+    border-radius: 0px;
+    border: 0px;
+}
+
+button:hover {
+    background-color: #153243;
+    border: 0px;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    background-color: #284B63;
+    width: 100%;
+    padding: 0px;
+}
+
+#consulta-veiculo {
+    padding: 50px;
+    margin: 100px;
+}

@@ -1,0 +1,57 @@
+#consultarVeiculo{
+    position: relative;
+    width: 30%;
+    text-align: center;
+    margin: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EEF0EB;
+}
+
+#consultarVeiculo #inputConsulta{
+    margin: 20px;
+    text-align: left;
+}
+
+#consultarVeiculo #inputConsulta button{
+    height: 40px;
+    width: 30%;
+    background-color: #284B63;
+    color: white;
+    border: 0px;
+}
+
+#consultarVeiculo #inputConsulta input{
+    height: 40px;
+    width: 70%;
+    padding: 10px;
+}
+
+#consultarVeiculo #resultadoConsulta{
+    margin: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+#consultarVeiculo #resultadoConsulta input{
+    height: 35px;
+    padding: 10px;
+    width: 50%;
+    padding: 10px;
+    margin: 5px;
+    position: absolute;
+    right: 10px;
+}
+
+#consultarVeiculo #resultadoConsulta span{
+    padding: 10px;
+    position: absolute;
+}
+
+
+
+
+
+

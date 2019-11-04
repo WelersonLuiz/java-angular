@@ -1,0 +1,40 @@
+
+<div id="consultarVeiculo">
+    <div id="inputConsulta">
+        <input id="codVeiculo" #codVeiculo (keyup)="onKey(codVeiculo.value)" (keyup.enter)="getVeiculo()" 
+            type="text" placeholder="Codigo Veiculo (Ex: 1, 2 e 3)">
+
+        <button (click)="getVeiculo()">Consultar</button>
+    </div>
+    
+    <div id="resultadoConsulta">
+        <div id="tipoVeiculo">
+            <span>Tipo:</span> 
+            <input [ngModel]="dataSource?.tipoVeiculo"/> <br> <br>
+        </div>
+        <div id="marcaVeiculo">
+            <span>Marca: </span>
+            <input [ngModel]="dataSource?.marcaVeiculo"/> <br> <br>
+        </div>
+        <div id="modeloVeiculo">
+            <span>Modelo: </span>
+            <input [ngModel]="dataSource?.modeloVeiculo"/> <br> <br>
+        </div>
+        <div id="anoVeiculo">
+            <span>Ano: </span>
+            <input [ngModel]="dataSource?.anoVeiculo"/> <br> <br>
+        </div>
+        <div>
+            <span>Cor: </span>
+            <input [ngModel]="dataSource?.corVeiculo"/> <br> <br>
+        </div>
+        <div>
+            <span>Velocidade Max: </span>
+            <input [ngModel]="dataSource?.velocidadeMaxVeiculo"/> <br> <br>
+        </div>
+        <div>
+            <span>Quilometragem: </span>
+            <input [ngModel]="dataSource?.quilometragemVeiculo"/> <br> <br>
+        </div>
+    </div>
+</div>
