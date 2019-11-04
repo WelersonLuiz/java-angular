@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "2d62aa05-017b-4813-ab35-229977dd48db",
+		"name": "ProvaJavaAngular",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ConsultarVeiculo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/aluguel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aluguel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IniciarAluguel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idVeiculo\": 3,\r\n\t\"horaOperacao\": \"2019-10-23 15:00\",\r\n\t\"emailCondutor\": \"email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/aluguel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aluguel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FinalizarAluguel",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idVeiculo\": 3,\r\n\t\"horaOperacao\": \"2019-10-23 16:00\",\r\n\t\"emailCondutor\": \"email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/aluguel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aluguel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ChecarMovimentacaoVeiculo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/aluguel/movimentacao/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"aluguel",
+						"movimentacao",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
